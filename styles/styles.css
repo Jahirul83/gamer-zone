@@ -10,28 +10,26 @@
 
 /* shared styles */
 .btn-primary {
-    padding: 21px 40px;
+    padding: 15px 30px;
     border-radius: 2.8rem;
     background: #FF42A5;
     color: #FFF;
-    font-size: 1.2rem;
     font-weight: 600;
     border: none;
 
 }
 
 .btn-secondary {
-    padding: 21px 40px;
+    padding: 15px 30px;
     border-radius: 2.8rem;
     background: #4EC5F7;
     color: #FFF;
-    font-size: 1.2rem;
     font-weight: 600;
     border: none;
 }
 
 .section-size {
-    margin: 100px 250px;
+    margin: 80px 220px;
 }
 
 
@@ -40,7 +38,7 @@ header {
     background: #FFF;
     /* background: #3C354F; */
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    padding: 35px 250px;
+    padding: 30px 250px;
 }
 
 /* navbar style */
@@ -117,7 +115,7 @@ header {
     background-image: url('../images/Group 14.png');
     background-repeat: no-repeat;
     background-size: cover;
-
+    padding: 35px 120px;
 }
 
 .banner-content h1 {
@@ -141,11 +139,23 @@ header {
 }
 
 .banner-img img {
-    height: 400px;
+    width: 450px;
 
 }
+/* we are gamer section starts */
+.gamer-container{
+    display: flex;
+    justify-content: space-between;
 
-
+}
+.gamer-img img{
+    width: 500px;
+    height: 500px;
+}
+.gamer-description{
+    width: 400px;
+    text-align: right;
+}
 
 /* responsive styles */
 /* for mobile device */
@@ -154,8 +164,9 @@ header {
     /* header{
         padding: 35px 250px;
     } */
+
     .nav-container,
-    .banner-container,
+    .gamer-container,
     .nav-items>ul {
         flex-direction: column;
         gap: 2rem;
@@ -163,5 +174,19 @@ header {
 
     .nav-items li button {
         width: 12.5rem;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+
+    }
+    .gamer-container{
+        text-align: center;
+    }
+    .banner-content{
+        width: 400px;
+    }
+    .banner-btn .btn-primary {
+        margin-bottom: 10px;
+
     }
 }
