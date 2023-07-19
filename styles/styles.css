@@ -29,7 +29,7 @@
 }
 
 .section-size {
-    margin: 80px 220px;
+    margin: 80px 250px;
 }
 
 
@@ -38,7 +38,7 @@ header {
     background: #FFF;
     /* background: #3C354F; */
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    padding: 30px 250px;
+    padding: 10px 250px;
 }
 
 /* navbar style */
@@ -59,7 +59,7 @@ header {
 }
 
 .nav-logo h3 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -103,8 +103,17 @@ header {
     color: black;
 }
 
-
+/* main */
+main
+{
+    max-width: 1440px;
+    margin: 50px auto;
+}
 /* banner styles */
+.banner {
+    margin: 80px 250px;
+}
+
 .banner-container {
     display: flex;
     justify-content: space-between;
@@ -142,19 +151,38 @@ header {
     width: 450px;
 
 }
+
 /* we are gamer section starts */
-.gamer-container{
+.gamer-container {
     display: flex;
     justify-content: space-between;
 
 }
-.gamer-img img{
+
+.gamer-img img {
     width: 500px;
     height: 500px;
 }
-.gamer-description{
+
+.gamer-description {
     width: 400px;
     text-align: right;
+}
+
+
+/* online games styles */
+.online-gamer-container{
+    text-align: center;
+}
+.online-games-img{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.online-games-img img {
+    width: 250px;
+    height: 320px;
 }
 
 /* responsive styles */
@@ -167,6 +195,7 @@ header {
 
     .nav-container,
     .gamer-container,
+    .online-games-img,
     .nav-items>ul {
         flex-direction: column;
         gap: 2rem;
@@ -175,18 +204,36 @@ header {
     .nav-items li button {
         width: 12.5rem;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
 
     }
-    .gamer-container{
+
+    .gamer-container {
         text-align: center;
     }
-    .banner-content{
+
+    /* .banner-content{
         width: 400px;
-    }
+    } */
     .banner-btn .btn-primary {
         margin-bottom: 10px;
 
+    }
+
+    /* .banner{
+        margin: 80px 250px;
+    } */
+    .section-size {
+        margin: 0px auto;
+    }
+    /* online gamer */
+    .online-gamer-container{
+        padding-left: 120px;
+    }
+    .online-gamer-content{
+        width: 250px;
+        margin-bottom: 30px;
     }
 }
