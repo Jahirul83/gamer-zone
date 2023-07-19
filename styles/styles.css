@@ -530,7 +530,7 @@ footer p {
 
     .game-tabs {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 5px;
     }
 
     .footer-link>ul {
@@ -614,4 +614,9 @@ footer p {
         height: 220px;
         width: 180px;
     }
+    .game-tabs {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
 }
