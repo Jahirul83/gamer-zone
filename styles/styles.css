@@ -216,7 +216,7 @@ main {
 .game-tabs{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 70px;
+    gap: 50px;
 }
 
 .game-tabs button {
@@ -224,8 +224,18 @@ main {
     background: #FFF;
     display: flex;
     border: none;
+    align-items: center;
+    gap: 5px;
 
 }
+.juu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .btn-break{
+    margin-left: 100px;
+} */
 .game-tabs button:hover {
     border: 2px solid #F948B2;
     color: #F948B2;
@@ -330,7 +340,31 @@ footer p {
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
 }
+/* career list */
+.career-container
+{
+    display: flex;
+    background-image: url("../images/Group 14.png");
+    background-repeat: no-repeat;
+    background-color: #F948B2;
+}
+.career-list{
+    display: flex;
+}
+.career-list li{
+    list-style: none;
+}
 
+.career-img img{
+    width: 600px;
+    height: 400px;
+}
+.career-content{
+    padding-left: 200px;
+}
+.career-list-right li{
+    text-align: end;
+}
 
 /* responsive styles */
 /* for mobile device */
@@ -418,7 +452,22 @@ footer p {
         height: 220px;
         width: 180px;
     }
-
+    .game-tabs{
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .footer-link>ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .footer-social ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .footer-treams ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 }
 
 /* for medium devices */
