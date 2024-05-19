@@ -459,7 +459,11 @@ footer p {
         flex-direction: column;
         gap: 2rem;
     }
+    /* .nav-container {
+        align-items: center;
+        justify-content: center;
 
+    } */
     .nav-items li button {
         width: 12.5rem;
     }
